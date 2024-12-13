@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABOUT ME</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: impact, sans-serif;
+    font-size: 18px;}
+
+footer a {
+    color: rgb(219, 157, 219);
+    text-decoration: none;}
+
+footer a:hover {
+    text-decoration: underline;}
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: impact, sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: rgb(184, 184, 255);
+    margin: 0;}
+
+section {
+    display: flex;
+    height: 100vh;}
+
+nav {
+    flex: 1;
+    background-image: url("https://i.pinimg.com/control2/736x/f8/dd/55/f8dd5519bdb9cc8c4ef16391619e589b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;}
+
+nav img {
+    max-width: 100%; 
+    height: auto;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;}
+
+nav a {
+    display: inline-block;
+    background-color: rgb(184, 184, 255);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: impact, sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;}
+
+nav a:hover {
+    background-color: pink;
+    transform: scale(1.1);}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;}
+
+.dropdown-content a:hover {
+    background-color: pink;}
+
+article {
+    flex: 3;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center;}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;}
+
+.video {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;}
+
+.video:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(184, 184, 255);}
+
+.video video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;}
+
+.skill-bar-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 10px;
+    font-family: "candara";
+    font-size: 24px;}
+
+.skill-description {
+    font-size: 24px;
+    color: #333;
+    font-family: "candara";
+    margin-bottom: 10px;}
+
+.skill-bar {
+    height: 100%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;}
+
+.skill-bar:hover {
+    transform: scale(1.05);}
+
+@media (max-width: 768px) {
+    .video-container {
+     grid-template-columns: 1fr; /* Stack videos in one column on small screens */
+    }
+
+h1 {font-size: 48px;}
+
+nav a {
+    font-size: 14px;
+    padding: 6px 12px;}}
+
+@media (max-width: 480px) {
+    nav {
+    flex: 0.5;
+    padding: 6px;}
+
+article {
+    flex: 2.5;}
+
+h1 {
+     font-size: 32px;}
+
+nav a {
+    font-size: 12px;
+    padding: 4px 8px;}
+
+footer {
+    font-size: 12px;}}
+</style>
+</head>
+
+<body>
+
+<section>
+<nav>
+<img src="https://i.pinimg.com/originals/c5/b5/e5/c5b5e5d3b95c03abc1ccabdb746d5a98.gif" style="max-width: 100%; height: auto;">
+<ul>
+<li><a href="#*ABOUTME*">ABOUT ME</a></li>
+<li><a href="#*MYSKILLS*">MY SKILLS</a></li>
+<li class="dropdown">
+<a href="javascript:void(0)"><i class="fas fa-bars"></i> MORE</a>
+<div class="dropdown-content">
+<a href="EDUCATION.html">Next Page<i class="fas fa-angle-double-right"></i></a>
+<a href="MAIN PAGE.html"><i class="fas fa-angle-double-left"></i> Home</a>
+</div>
+</li>
+</ul>
+</nav>
+
+<article>
+<h1 id="*ABOUTME*">⋆୨♡୧⋆ABOUT ME⋆୨♡୧⋆</h1>
+<br>
+<div class="article-container">
+<img src="gambar saya 1.jpg" width="455" height="480" border="5px solid #555">
+<div>
+<p style="font-family:candara; font-size:24px; color:black;"><b>Name:</b> Nur Syafiqah Syahirah Binti Zul Aszele</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Age:</b> 20 years old</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Date of birth:</b> 3 April 2004</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Gender:</b> Female</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Home address:</b> No 23-052, Kota Bahagia, 26700, Muadzam Shah, Pahang</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Phone Number:</b> 011-21635774</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Email address:</b> piqasyahirah@gmail.com</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Hobby & interest:</b> Cafe hunting</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Ambition:</b> Be a lecturer</p>
+<p style="font-family:candara; font-size:24px;color: black"><b>Comfort food:</b> Ramyun or something spicy</p>
+</div>
+</div>
+
+<h1 id="*MYSKILLS*">⋆୨♡୧⋆MY SKILLS⋆୨♡୧⋆</h1>
+<br><br>
+
+<div class="video-container">
+<div class="video">
+<video controls autoplay muted>
+<source src="skills 1.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="skill-description">Microsoft skills</p>
+<div class="skill-bar-container">
+<div class="skill-bar" style="background-color: pink; width: 90%;">90%</div>
+</div>
+</div>
+<div class="video">
+<video controls autoplay muted>
+<source src="skills 2.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="skill-description">Presentation skills</p>
+<div class="skill-bar-container">
+<div class="skill-bar" style="background-color: pink; width: 80%;">80%</div>
+</div>
+</div>
+<div class="video">
+<video controls autoplay muted>
+<source src="skills 3.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="skill-description">Records management skills</p>
+<div class="skill-bar-container">
+<div class="skill-bar" style="background-color: pink; width: 75%;">75%</div>
+</div>
+</div>
+<div class="video">
+<video controls autoplay muted>
+<source src="skills 4.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="skill-description">Leadership skills</p>
+<div class="skill-bar-container">
+<div class="skill-bar" style="background-color: pink; width: 85%;">85%</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+
+<footer>
+<p><sup>&copy;</sup> 2024 Nur Syafiqah Syahirah. All rights <sub>reserved.</sub></p>
+<p>Designed with ❤️ | <a href="https://www.instagram.com/syaherahh/" target="_blank">Visit My Instagram</a></p>
+</footer>
+
+<script>
+document.querySelector('.dropdown > a').addEventListener('click', function(event) {
+const dropdownContent = document.querySelector('.dropdown-content');
+dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';});
+</script>
+
+</body>
+</html>

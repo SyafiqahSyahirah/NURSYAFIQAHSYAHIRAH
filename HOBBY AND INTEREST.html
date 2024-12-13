@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+body, html {
+height: 100%;
+margin: 0;
+font-family: candara;
+background-color: #fbc4ab;
+text-align: center;
+font-size: 24px;}
+
+footer {
+  text-align: center;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  font-family: impact, sans-serif;
+  font-size: 18px;}
+
+footer a {
+color: rgb(219, 157, 219);
+text-decoration: none;}
+
+footer a:hover {text-decoration: underline;}
+
+nav {
+background-color: black;
+overflow: hidden;
+display: flex; 
+justify-content: left;}
+
+nav a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+font-family: impact, sans-serif;
+font-size: 18px;}
+
+nav a:hover {
+background-color:white;
+color: black;}
+
+.dropdown .dropbutton {
+background-color: black;
+color: white;
+padding: 14px 20px;
+font-size: 18px;
+border: none;
+cursor: pointer;
+display: inline-block;
+font-family: impact, sans-serif;}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: black;
+min-width: 160px;
+z-index: 1;}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;}
+
+.dropdown:hover .dropdown-content {
+display: block;}
+
+.dropdown-content a:hover {
+background-color:white;
+color: black;}
+
+.container {
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding: 20px;}
+
+.image {
+width: 725px;
+height: 750px;
+border: 5px solid black;}
+
+.button-container {
+text-align: center;
+margin-top: 5px;}
+
+.button-container a {
+display: inline-block;
+background-color: black;
+color: white;
+text-decoration: none;
+padding: 20px 20px;
+border-radius: 5px;
+margin: 10px;
+font-family: impact,sans-serif;
+font-size: 18px;
+font-weight: lighter;
+transition: background-color 0.3s, transform 0.3s;
+align-items: flex-end;}
+
+.button-container a:hover {
+background-color: brown;
+transform: scale(1.1);}
+
+@media (max-width: 480px) {
+nav a {font-size: 14px;padding: 10px 14px;}
+
+.container {padding: 10px;}
+
+.image {width: 100%;height: auto;max-width: 100%;}
+
+.button-container a {padding: 12px 12px;font-size: 14px;}}
+</style>
+
+<script>
+function autoScroll() {
+window.scrollBy(0, 1);
+if (document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight) {
+clearInterval(scrollInterval);}}
+let scrollInterval = setInterval(autoScroll, 50); // Adjust speed by changing the interval value
+</script>
+    
+</head>
+
+<body>
+<nav>
+<a href="MAIN PAGE.html">HOME</a>
+<a href="GALLERY.html">NEXT PAGE <i class="fas fa-angle-double-right"></i></a>
+<a href="EDUCATION.html"><i class="fas fa-angle-double-left"></i> PREVIOUS PAGE</a>
+<div class="dropdown">
+<button class="dropbutton">CAFE HUNTING
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="#KEBUNHAUS">KEBUN HAUS</a>
+<a href="#RUMAHHIJAU">RUMAH HIJAU</a>
+<a href="#DOLLAHCAFE">DOLLAH CAFE</a>
+</div>
+</div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container" id="KEBUNHAUS">
+<div>
+<p style="font-family: impact, sans-serif; font-size: 105px; color: brown;margin: 0%; margin-top: -20px;">KEBUN HAUS <i>CAFE</i></p>
+<p style="font-family: candara; font-size: 24px; color: black; text-align: center;"> <b>
+Kebun Haus in Segamat, Johor, offers a unique cafe experience that merges the comfort of modern amenities with the beauty of nature. It is an ideal getaway for those seeking to relax & enjoy the outdoors. Kebun Haus is praised for its comprehensive facilities, including a swimming pool, & offers a range of activities such as badminton, archery, football, & trampoline. Guests<br> can also enjoy delicious food and drinks at reasonable prices,making it a complete cafe experience​​​​.
+</b></p>
+<br>
+<ul type="square">
+<li><b>Address:</b> Haus Recreational and Cafe, Taman Sulir, Segamat District, Johor, Malaysia</li>
+<li><b>Bussines number:</b>013-324 4913</li>
+<li><b>Price range:</b>RM8 to RM15 </li>
+</ul>
+
+<p style="font-family:candara; font-size:24px; text-align: center"><b>Hot menu:</b>
+
+<ol type="1">
+<li> Cheeseespresso</li>
+<li> Berry cheese</li>
+<li> Rose late</li>
+</ol>
+</div>
+
+<img src="kebun haus.jpg" class="image" alt="Cafe Image">
+</div>
+<div class="button-container">
+<a href="https://www.google.com/search?q=kebun+haus&sca_esv=edf0c1bfb769469a&biw=1600&bih=773&sxsrf=ADLYWILO0F_R7GMaAX241P9Xg95kzPzV-Q%3A1730967594889&ei=KngsZ7KENt6iseMPnvafqAY&oq=&gs_lp=Egxnd3Mtd2l6LXNlcnAiACoCCAIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyDRAuGMcBGCcY6gIYrwEyBxAjGCcY6gIyFBAAGIAEGJECGLQCGIoFGOoC2AEBMhQQABiABBiRAhi0AhiKBRjqAtgBATIUEAAYgAQYkQIYtAIYigUY6gLYAQEyFBAAGIAEGOMEGLQCGOkEGOoC2AEBMhQQABiABBjjBBi0AhjpBBjqAtgBATIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQEyHRAuGIAEGJECGLQCGMcBGMgDGIoFGOoCGK8B2AEBMh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBAUjBD1AAWABwAXgBkAEAmAEAoAEAqgEAuAEByAEA-AEBmAIBoAIQqAISmAMQugYGCAEQARgBkgcBMaAHAA&sclient=gws-wiz-serp" target="_blank">Kebun Haus</a>
+<a href="https://www.google.com/maps/dir/Kebun+Haus+Recreational+and+Cafe,+Taman+Sulir,+Segamat+District,+Johor/GRQ8%2B3M,+Taman+Sulir,+85000+Segamat,+Johor/@2.5377278,102.7754976,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x31cfd37f18293cdb:0xd0b4f10c2a456dbe!2m2!1d102.8166974!2d2.5376427!1m5!1m1!1s0x31cfd37f18293cdb:0xd0b4f10c2a456dbe!2m2!1d102.8166974!2d2.5376427?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Location</a>
+<a href="https://www.instagram.com/kebun.haus/?hl=en" target="_blank">Instagram</a>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container" id="RUMAHHIJAU">
+<div>
+<p style="font-family: impact, sans-serif; font-size: 105px; color: brown;margin: 0%; margin-top: -20px;">RUMAH HIJAU<i>CAFE</i></p>
+<p style="font-family: candara; font-size: 24px; color: black; text-align: center;"> 
+<b>Rumah Hijau produce mostly food and drinks from their very own garden with the concept of "From Garden to Table" they offer healthy food and drinks with 100% natural color and flavor from trees that they plant with 0% pesticide or <br>chemical fertilizer. As their vision, "Good Food with Good Memories". 
+</b></p>
+<br>
+<ul type="square">
+<li><b>Address:</b>No 24A, 1, Kampung Sulir, 85000 Segamat, Johor</li>
+<li><b>Bussines number:</b>019-373 2771</li>
+<li><b>Price range:</b>RM 1 to RM 20</li>
+</ul>
+    
+<p style="font-family:candara; font-size:24px; text-align: center"><b>Hot menu:</b>
+    
+<ol type="1">
+<li>Nasi ayam butter</li>
+<li>Sago gula apong</li>
+<li>Nasi ala kakwok</li>
+</ol>
+</div>
+
+<img src="rumah hijau.jpg" class="image" alt="Cafe Image">
+</div>
+<div class="button-container">
+<a href="https://www.google.com/search?q=rumah+hijau+segamat" target="_blank">Rumah Hijau</a>
+<a href="https://www.google.com/maps/dir/Rumah+Hijau+Segamat" target="_blank">Location</a>
+<a href="https://www.facebook.com/p/Rumah-Hijau-Segamat-100088447536566" target="_blank">Facebook</a> 
+</div>
+<br>
+<br>
+<br>
+
+<div class="container" id="DOLLAHCAFE">
+<div>
+<p style="font-family: impact, sans-serif; font-size: 105px; color:brown;margin: 0%; margin-top: -20px;">DOLLAH <i>CAFE</i></p>
+<p style="font-family: candara; font-size: 24px; color: black; text-align: center;"> 
+<b>Dollah Cafe is a cafe with a "Modern Relaxed" concept. This cafe is located in the middle of Segamat city. Dollah Cafe also has a unique concept because here there is a combination of sales with various food stalls. For example,<br> Abdullah Tee Mee Tarik, and also a Coffee Shop. The atmosphere at Dollah Cafe is also very calm and suitable for healing . If customers want to spending <br>time with their families, they are also welcome.<br>
+</b></p>
+<br>
+<ul type="square">
+<li><b>Address:</b>No.72, Lot 2424, Jalan Abdul Aziz, Kampung Abdullah, 85000 Segamat, Johor</li>
+<li><b>Bussines number:</b>012-718 7777</li>
+<li><b>Price range:</b>RM 15 to RM 25</li>
+</ul>
+    
+<p style="font-family:candara; font-size:24px; text-align: center"><b>Hot menu:</b>
+    
+<ol type="1">
+<li> Wantan mee</li>
+<li> Shellout</li>
+<li> Grill chicken chop</li>
+</ol>
+    
+</div>
+<img src="dollah cafe.jpg" class="image" alt="Cafe Image">
+</div>
+
+<div class="button-container">
+<a href="https://www.google.com/search?q=dollah+cafe&sca_esv=91f756f8d95b3a2b&sxsrf=ADLYWIKtqLjTj_wiQDiW9cHyPBwQTH4WKA%3A1730968120649&ei=OHosZ-myJ_i4seMPjKa0kAI&oq=dol&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2RvbCoCCAAyChAjGIAEGCcYigUyDhAuGIAEGJECGLEDGIoFMg4QABiABBiRAhixAxiKBTIQEAAYgAQYsQMyHRAuGIAEGMcBGIoFGK8BMhAQLhiABBhDGMcBGIoFGK8BMggQABiABBixAzIIEAAYgAQYsQMyHRAuGIAEGMcBGIoFGK8BGJcFGNwEGN4EGOAE2AEBSKohULMPWO0RcAF4AZABAJgBmgGgAa4DqgEDMC4zuAEByAEA-AEBmAIEoAKlA6gCD8ICBxAjGCcY6gLCAg0QLhjHARgnGOoCGK8BwgIgEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYjgUYrwHYAQHCAh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBAcICERAuGIAEGJECGMcBGIoFGK8BwgILEC4YgAQYsQMYgwHCAgUQABiABMICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAgsQABiABBiRAhiKBcICExAuGIAEGEMYxwEYigUYjgUYrwHCAhAQLhiABBhDGMcBGIoFGK8BwgINEC4YgAQYQxjUAhiKBcICChAAGIAEGEMYigWYAw66BgYIARABGAiSBwMxLjOgB4gz&sclient=gws-wiz-serp" target="_blank">Dollah Cafe</a>
+<a href="https://www.google.com/maps/dir/2.4870574,102.7271496/dollah+cafe/@2.4881971,102.7280625,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x31cfd3c7d299ab7d:0xa013c56b324bc144!2m2!1d102.8253631!2d2.5011913!6m3!1i0!2i0!3i1?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Location</a>
+<a href="https://www.facebook.com/p/Abang-Dollah-Cafe-Event-Space-61560050764967/" target="_blank">Facebook</a>
+</div>
+<br>
+<br>
+<br>
+
+<footer>
+    <p><sup>&copy;</sup> 2024 Nur Syafiqah Syahirah. All rights <sub>reserved.</sub></p>
+    <p>Designed with ❤️ | <a href="https://www.instagram.com/syaherahh/" target="_blank">Visit My Instagram</a></p>
+  </footer>
+  
+
+</body>
+</html>
