@@ -42,6 +42,11 @@ section {
   display: flex;
   height: 100vh;}
 
+/* Add styles for the image map areas */
+area {
+  outline: none; 
+}
+
 nav {
   flex: 1;
   background-image: url("https://images.unsplash.com/photo-1588097257570-59b6f7360bfb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D.jpg");
@@ -145,7 +150,7 @@ td:hover {
 
 @media (max-width: 768px) {
     .video-container {
-    grid-template-columns: 1fr; /* Stack videos in one column on small screens */}
+    grid-template-columns: 1fr;}
 
 h1 {font-size: 48px;}
 
@@ -177,6 +182,7 @@ footer {font-size: 12px;}
 
 th, td {
     padding: 10px;}}
+
 </style>
 </head>
 
@@ -217,7 +223,11 @@ th, td {
 
 <h1 id="*DIPLOMA*">⋆୨♡୧⋆DIPLOMA⋆୨♡୧⋆</h1>
 <br>
-<img src="UITM SEGAMAT.jpg" class="center" style="width:1000px;height:450px; border:4px solid pink;">
+<img src="UITM SEGAMAT.jpg" usemap="#uitmmap" class="center" style="width:1000px;height:450px; border:4px solid pink;">
+<map name="uitmmap">
+  <area shape="rect" coords="50,50,250,150" alt="Home Page" href="https://www.uitm.edu.my/" target="_blank">
+  <area shape="circle" coords="800,350,100" alt="Learn More" href="https://www.uitm.edu.my/" target="_blank">
+</map>
 <p style="font-family: impact, sans serif; font-size: 30px; color: black; text-align: center;"><b>UiTM KAMPUS SEGAMAT</b></p>
 <p style="font-family: candara; font-size: 24px; color: black; text-align: center;">After completing SPM, I continued my studies at a higher level.<br> UiTM Segamat Campus is located in Johor Bahru and also known as the "Kampus Simfoni Alam.<br></p>
 <br>
@@ -284,3 +294,13 @@ th, td {
 
 </body>
 </html>
+
+
+ 
+  
+
+
+
+
+
+
